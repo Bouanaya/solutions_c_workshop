@@ -1,8 +1,5 @@
 #include <stdio.h>
 
- 
-     #include <stdio.h>
-
 int main() {
     char nom[50];
     char prenom[50];
