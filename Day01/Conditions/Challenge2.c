@@ -7,6 +7,7 @@ int main() {
 
     switch(Caratere) {
         case 'a':
+        printf("%c est une voyelle.\n", Caratere);
         case 'e':
         case 'i':
         case 'o':
