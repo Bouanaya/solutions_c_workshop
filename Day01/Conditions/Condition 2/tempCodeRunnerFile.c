@@ -1,0 +1,1 @@
+ evaluer_eligibilite(revenu, score_credit, duree_pret);
