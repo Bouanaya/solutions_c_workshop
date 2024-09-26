@@ -4,6 +4,7 @@
 
 int main() { 
     
+
 int go = rand() ;
 printf("%d",go) ;
 
