@@ -4,11 +4,10 @@
 
 int main() { 
     
-    srand(time(NULL));
 int go = rand() ;
 printf("%d",go) ;
 
-
+ srand(time(NULL));
     int tim = rand() % 7;
     switch (tim)
     {
