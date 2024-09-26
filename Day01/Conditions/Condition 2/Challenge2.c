@@ -9,13 +9,13 @@ float calculer_prime(int age, int typevoiture, int nbaccidents, float primebase)
     }
  
     switch (typevoiture) {
-        case 1: // Sportive
+        case 1:  
             prime *= 2;
             break;
-        case 2: // Utilitaire
+        case 2: 
             prime *= 1.2;
             break;
-        case 3: // Familiale
+        case 3: 
             prime *= 1.1;
             break;
         default:
