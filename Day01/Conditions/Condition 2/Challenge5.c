@@ -49,7 +49,7 @@ int main() {
         typeVoyage = "Voyage économique";
     }
 
-    // Déterminer la destination recommandée
+   
     char* destinationRecommandee;
     if (destination == 1 && budget >= 1000 && nbPersonnes > 2) {
         destinationRecommandee = "Plage";
@@ -59,7 +59,7 @@ int main() {
         destinationRecommandee = "Ville";
     }
 
-    // Afficher les recommandations
+  
     printf("Type de voyage: %s\n", typeVoyage);
     printf("Destination recommandée: %s\n", destinationRecommandee);
 
