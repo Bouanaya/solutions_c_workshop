@@ -5,8 +5,7 @@ int main()
     int nomber;
     printf("entrez nomber : ");
     scanf("%d", &nomber);
-    if (nomber < 10)
-    {
+    if (nomber < 10){
         printf("recale");
         }
     else if (nomber >= 10 || nomber < 12)
@@ -19,7 +18,7 @@ int main()
     }
     else if (nomber >= 14 || nomber < 16)
     printf("la mention très bien \n");
-    }
+   
 
     return 0;
 }
