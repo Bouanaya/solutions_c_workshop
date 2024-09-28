@@ -14,7 +14,6 @@ int main()
         printf("Entrez l'élément %d: ", i + 1);
         scanf("%d", &tab[i]);
     }
-
     min = tab[0];
 
     for (i = 1; i < n; i++)
