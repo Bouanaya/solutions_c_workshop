@@ -16,7 +16,7 @@ struct Reservation
 
 // stocker  reservations
 struct Reservation reservations[100];
-int nombreReservations = 0;
+int nombreReservations = 10;
 
 // Fonction chonge  reference
 void genererReference(char ref[])
@@ -156,7 +156,61 @@ void insererReservationsParDefaut()
     printf("10 reservations par defaut inserees.\n");
 }
 /// function trie/
- 
+// Fonction pour trier les réservations par nom
+int trierParNom()
+{
+    for (int i = 0; i < nombreReservations - 1; i++)
+    {
+        for (int j = i + 1; j < nombreReservations; j++)
+        {
+            if (strcmp(reservations[i].nom, reservations[j].nom) > 0)
+            {
+                struct Reservation temp = reservations[i];
+                reservations[i] = reservations[j];
+                reservations[j] = temp;
+            }
+        }
+    }
+    printf("Réservations triées par nom.\n");
+    return 0;
+}
+
+// Fonction pour trier les réservations par statut
+int trierParStatut()
+{
+    for (int i = 0; i < nombreReservations - 1; i++)
+    {
+        for (int j = i + 1; j < nombreReservations; j++)
+        {
+            if (strcmp(reservations[i].statut, reservations[j].statut) > 0)
+            {
+                struct Reservation temp = reservations[i];
+                reservations[i] = reservations[j];
+                reservations[j] = temp;
+            }
+        }
+    }
+    printf("Réservations triées par statut.\n");
+
+    return 0;
+}
+
+void Trireservations()
+{
+    int choix;
+
+    printf("___Menu___\n");
+    printf("1 : Trides reservations par Nom.\n");
+    printf("2 : Trides reservations par statut \n");
+    printf("_________________\n");
+    scanf("%d", &choix);
+
+    if (choix == 1)
+        trierParNom();
+    else if (choix == 2)
+        trierParStatut();
+}
+
 // Menu principal
 void menu()
 {
@@ -200,7 +254,7 @@ void menu()
             afficherToutesLesReservations();
             break;
         case 6:
-            // Trireservations();
+            Trireservations();
             break;
 
         case 0:
